@@ -1,29 +1,23 @@
 package com.driver;
-
 public class Boat implements WaterVehicle{
-    int capacityOfBoat;
-    String nameOfBoat;
-
-    public  Boat(int capacityOfBoat , String nameOfBoat){
-        this.capacityOfBoat = capacityOfBoat;
-        this.nameOfBoat = nameOfBoat;
+    String name;
+    int capacity;
+    public Boat(String name, int capacity) {
+        this.name = name;
+        this.capacity = capacity;
     }
-
-    public void setCapacityOfBoat(int capacityOfBoat) {
-        this.capacityOfBoat = capacityOfBoat;
+    public void setName(String name) {
+        this.name = name;
     }
-
-    public void setNameOfBoat(String nameOfBoat) {
-        this.nameOfBoat = nameOfBoat;
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
     }
-
     @Override
     public String getVehicleName() {
-        return this.nameOfBoat;
+        return this.name;
     }
-
     @Override
     public int getVehicleCapacity() {
-        return this.capacityOfBoat;
+        return this.capacity;
     }
 }
